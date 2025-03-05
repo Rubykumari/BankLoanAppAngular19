@@ -1,0 +1,11 @@
+.app{
+    height: 100vh;
+    nav{
+        height: 8vh;
+        .nav-link{
+            &:focus-within{
+                color: #fff;
+            }
+        }
+    }
+}
