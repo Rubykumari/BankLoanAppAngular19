@@ -20,10 +20,17 @@
             <a class="nav-link" routerLink="newLoan">New Loan</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="text" placeholder="Search">
-          <button class="btn btn-primary" type="button" routerLink="login">Login</button>
-        </form>
+        @if (loggedUserData) {
+          <form class="d-flex">
+            <span class="text-white">{{ loggedUserData.userName }}</span>
+            <button class="btn btn-warning" type="button" (click)="onLogOut()">Log Out</button>
+          </form>
+        }
+        @else {
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+          </form>
+        }
       </div>
     </div>
   </nav>
