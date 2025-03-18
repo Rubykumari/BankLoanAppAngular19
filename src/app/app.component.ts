@@ -13,7 +13,9 @@ export class AppComponent {
   loggedUserData: any;
   constructor(
     private router: Router,
-  ) {
+  ) 
+  {
+    
   }
   ngOnInit(){
     const loggedUser = sessionStorage.getItem("bankLoginUser");

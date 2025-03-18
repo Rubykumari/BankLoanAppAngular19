@@ -47,8 +47,6 @@ export class LoginComponent {
         this.router.navigateByUrl('/loanAppList').then(() => {
           window.location.reload();
         });
-        // this.router.navigateByUrl('/loanAppList');
-        // window.location.reload();
       }
       else{
         alert(res.message)
